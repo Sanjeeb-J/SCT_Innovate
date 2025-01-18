@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Literacy Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .quiz-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            font-weight: bold;
+        }
+
+        .answers {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .answers li {
+            margin-bottom: 10px;
+        }
+
+        .next-button, .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .next-button:hover, .submit-button:hover {
+            background-color: #45a049;
+        }
+        
+        .home-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px
+        }
+
+        .home-button:hover {
+            background-color: #45a049;
+        }
+
+        .results {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .next-section {
+            position: fixed;
+            bottom: 20px;
+            right: 20px; /* Fixed at bottom-right corner */
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+
+        .next-section:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cyber Literacy Quiz</h1>
+</header>
+
+<main>
+    <div class="quiz-container">
+        <h2>Section 1: Understanding Cyber Literacy</h2>
+        
+        <div class="question">
+            <p>1. What is cyber literacy?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q1" value="a"> a) Knowing how to fish online</li>
+                <li><input type="radio" name="q1" value="b"> b) Using the internet safely and wisely</li>
+                <li><input type="radio" name="q1" value="c"> c) Playing video games</li>
+                <li><input type="radio" name="q1" value="d"> d) Writing emails</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>2. Why is cyber literacy important?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q2" value="a"> a) To learn how to cook</li>
+                <li><input type="radio" name="q2" value="b"> b) To watch more movies</li>
+                <li><input type="radio" name="q2" value="c"> c) To protect your personal information</li>
+                <li><input type="radio" name="q2" value="d"> d) To make friends online</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>3. What does cyber literacy help prevent?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q3" value="a"> a) Losing your keys</li>
+                <li><input type="radio" name="q3" value="b"> b) Identity theft</li>
+                <li><input type="radio" name="q3" value="c"> c) Forgetting passwords</li>
+                <li><input type="radio" name="q3" value="d"> d) Getting lost</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>4. What is a phishing scam?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q4" value="a"> a) A type of fishing</li>
+                <li><input type="radio" name="q4" value="b"> b) A type of virus</li>
+                <li><input type="radio" name="q4" value="c"> c) A way to catch fish</li>
+                <li><input type="radio" name="q4" value="d"> d) A fake email or message asking for personal information</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>5. What is identity theft?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q5" value="a"> a) Stealing someone’s car</li>
+                <li><input type="radio" name="q5" value="b"> b) Using someone’s personal information to pretend to be them</li>
+                <li><input type="radio" name="q5" value="c"> c) Forgetting your name</li>
+                <li><input type="radio" name="q5" value="d"> d) Losing your wallet</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>6. What is a fake website?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q6" value="a"> a) A website that looks real but is designed to trick you</li>
+                <li><input type="radio" name="q6" value="b"> b) A website about fishing</li>
+                <li><input type="radio" name="q6" value="c"> c) A website for kids</li>
+                <li><input type="radio" name="q6" value="d"> d) A website with no pictures</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>7. What should you do if you get an email saying you won a prize?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q7" value="a"> a) Click the link immediately</li>
+                <li><input type="radio" name="q7" value="b"> b) Share your bank details</li>
+                <li><input type="radio" name="q7" value="c"> c) Verify the email with a trusted source</li>
+                <li><input type="radio" name="q7" value="d"> d) Ignore it completely</li>
+            </ul>
+        </div>
+
+        <h2>Section 2: How to Recognize and Avoid Scams</h2>
+
+        <div class="question">
+            <p>8. What should you check before clicking a link in an email?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q8" value="a"> a) The weather</li>
+                <li><input type="radio" name="q8" value="b"> b) The sender’s email address</li>
+                <li><input type="radio" name="q8" value="c"> c) Your favorite TV show</li>
+                <li><input type="radio" name="q8" value="d"> d) Your calendar</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>9. What is a red flag in an email?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q9" value="a"> a) Poor spelling or grammar</li>
+                <li><input type="radio" name="q9" value="b"> b) A picture of a flag</li>
+                <li><input type="radio" name="q9" value="c"> c) A friendly greeting</li>
+                <li><input type="radio" name="q9" value="d"> d) A long email</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>10. What should you do if a website asks for your bank details?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q10" value="a"> a) Share them immediately</li>
+                <li><input type="radio" name="q10" value="b"> b) Check if the website is real and secure</li>
+                <li><input type="radio" name="q10" value="c"> c) Ignore it</li>
+                <li><input type="radio" name="q10" value="d"> d) Tell your friends</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>11. What is a strong password?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q11" value="a"> a) “123456”</li>
+                <li><input type="radio" name="q11" value="b"> b) “password”</li>
+                <li><input type="radio" name="q11" value="c"> c) A mix of letters, numbers, and symbols</li>
+                <li><input type="radio" name="q11" value="d"> d) Your name</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>12. What is two-factor authentication (2FA)?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q12" value="a"> a) A type of scam</li>
+                <li><input type="radio" name="q12" value="b"> b) A second layer of security for your accounts</li>
+                <li><input type="radio" name="q12" value="c"> c) A way to reset your password</li>
+                <li><input type="radio" name="q12" value="d"> d) A type of virus</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>13.What should you do if you feel unsure about an email?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q13" value="a"> a) Click on it anyway</li>
+                <li><input type="radio" name="q13" value="b"> b) Share it with everyone</li> 
+                <li><input type="radio" name="q13" value="c"> c) Ask a trusted person for help</li>
+                <li><input type="radio" name="q13" value="d"> d) Ignore it completely</li>
+            </ul>
+        </div>
+
+        <h2>General Knowledge</h2>
+
+        <div class="question">
+            <p>14. What is the best way to avoid scams?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q14" value="a"> a) Share your personal information with everyone</li>
+                <li><input type="radio" name="q14" value="b"> b) Be cautious and verify before acting</li>
+                <li><input type="radio" name="q14" value="c"> c) Click on every link you see</li>
+                <li><input type="radio" name="q14" value="d"> d) Ignore all emails</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>15. What should you do if you think you've been scammed?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q15" value="a"> a) Contact your bank or a trusted authority</li>
+                <li><input type="radio" name="q15" value="b"> b) Panic and do nothing</li>
+                <li><input type="radio" name="q15" value="c"> c) Share your experience on social media</li>
+                <li><input type="radio" name="q15" value="d"> d) Ignore it and hope it goes away</li>
+            </ul>
+        </div>
+
+        <button class="submit-button" onclick="submitQuiz()">Submit Quiz</button>
+        <a href="english_page.html" class="home"><button class="home-button">Home</button></a>
+        <div class="results" id="results"></div>
+    </div>
+</main>
+
+<footer>
+    <p>Copyright © 2025 CyberLumen. All rights reserved.</p>
+    <a href="conclusion.html" class="next-section">Next: Conclusion</a>
+</footer>
+
+<script>
+    function submitQuiz() {
+        let score = 0;
+        const answers = {
+            q1: 'b', // What is cyber literacy?
+            q2: 'c', // Why is cyber literacy important?
+            q3: 'b', // What does cyber literacy help prevent?
+            q4: 'd', // What is a phishing scam?
+            q5: 'b', // What is identity theft?
+            q6: 'a', // What is a fake website?
+            q7: 'c', // What should you do if you get an email saying you won a prize?
+            q8: 'b', // What should you check before clicking a link in an email?
+            q9: 'a', // What is a red flag in an email?
+            q10: 'b', // What should you do if a website asks for your bank details?
+            q11: 'c', // What is a strong password?
+            q12: 'b', // What is two-factor authentication (2FA)?
+            q13: 'c', // What should you do if you feel unsure about an email?
+            q14: 'b', // What is the best way to avoid scams?
+            q15: 'a'  // What should you do if you think you’ve been scammed?
+        };
+
+
+        // Check answers
+        for (let q in answers) {
+            const userAnswer = document.querySelector(`input[name="${q}"]:checked`);
+            if (userAnswer && userAnswer.value === answers[q]) {
+                score++;
+            }
+        }
+
+        // Display results
+        const resultText = `You got ${score} out of 15 questions correct.`;
+        document.getElementById('results').innerText = resultText;
+    }
+</script>
+
+</body>
+</html>
