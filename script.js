@@ -3,7 +3,7 @@ document.getElementById('english').addEventListener('click', function() {
 });
 
 document.getElementById('malayalam').addEventListener('click', function() {
-    window.location.href = 'malayalam_page.html'; // Redirect to Malayalam page
+    window.location.href = '/malayalam/malayalam_page.html'; // Redirect to Malayalam page
 });
 
 document.getElementById('try').addEventListener('click', function() {
